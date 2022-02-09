@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>倒计时</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div#ShowDiv {
+            width: 400px;
+            height: 400px;
+            font-size: 120px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 400px;
+            color: rgb(249, 253, 17);
+            background-color: rgb(204, 58, 58);
+        }
+
+        .BigDiv {
+            position: relative;
+            height: 450px;
+            width: 400px;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+
+
+        Button {
+            position: absolute;
+            right: 190px;
+            bottom: 3px;
+            font-size: large;
+            background-color: bisque;
+
+
+        }
+
+        #samllDiv {
+            width: 400px;
+            height: 200px;
+            font-size: 34px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 200px;
+            color: rgb(249, 253, 17);
+            background-color: rgb(58, 204, 114);
+        }
+    </style>
+</head>
+
+<body>
+    <!--定时器-->
+    <div class="BigDiv">
+        <div id="ShowDiv">
+
+        </div>
+        <button class="Button" onclick="habdleClick()">开始</button>
+    </div>
+    <!--时钟-->
+    <div class="BigDiv">
+        <div id="samllDiv">
+
+        </div>
+        <button class="Button" onclick="habdleClick2()">开始</button>
+    </div>
+
+</body>
+
+<script type="text/javascript">
+    //倒计时
+    var newDivElement = document.getElementById("ShowDiv");//获取到要更新内容的Div
+
+    var num = 10;//开始的数字
+    var schedule;
+    newDivElement.innerText = '倒计时';
+
+    function habdleClick() {
+        schedule = setInterval(djs, 500);//定时函数,毫秒级
+    }
+
+    function djs() {
+        newDivElement.innerText = num;//填充内容，构造函数
+        num--;
+        if (num == -1) {
+            clearInterval(schedule);
+
+        }
+    }
+    //时钟
+    var date = new Date();
+    var num2 = 0;
+    var year = date.getFullYear();
+    var month = date.getMonth() + 1;
+    var day = date.getDate();
+    var hour = date.getHours();
+    var min = date.getMinutes();
+    var sec = date.getSeconds();
+    if (sec < 10) {
+        sec = "0" + sec
+    }
+    if (month < 10) {
+        month = "0" + month
+    }
+    if (day < 10) {
+        day = "0" + day
+    }
+    var schedule;
+    var num2 = year + "-" + month + "-" + day + " " + hour + ":" + min + ":" + sec;
+    var newDivElement2 = document.getElementById("samllDiv")
+    newDivElement2.innerText = num2;
+    function djs2() {
+        newDivElement2.innerText = num2;//填充内容，构造函数
+
+    }
+   
+    function habdleClick2() {
+        schedule = setInterval(djs2, 1000);
+    }
+
+    window.onload = function () {
+        habdleClick2();
+    }
+</script>
+
+</html>
