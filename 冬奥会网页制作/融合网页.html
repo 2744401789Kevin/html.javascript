@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>冬奥会</title>
+    <style type="text/css">
+        * a {
+            text-decoration: none;
+        }
+
+        * a:hover {
+            color: crimson;
+        }
+
+        * a:active {
+            color: rgb(66, 231, 176);
+        }
+
+        #topNews .top-news-content {
+            width: 1200px;
+            margin: 24px auto 14px;
+            text-align: center;
+        }
+
+        div {
+            display: block;
+        }
+
+        #topNews .top-news-content .top-news-title a {
+
+            color: #0755a7;
+        }
+
+        #topNews .top-news-content .top-news-title {
+            font-size: 33px;
+        }
+
+        a {
+            background-color: transparent;
+        }
+
+        #topNews .top-news-content .top-news-list a {
+            color: #222;
+            font-size: 20px;
+        }
+
+
+        #topNews .top-news-content .top-news-list {
+            font-size: 16px;
+            line-height: 34px;
+            color: #222;
+            margin: 0;
+        }
+
+
+        p {
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+        }
+
+        div#second-div {
+            margin-left: 6%;
+            position: relative;
+        }
+ /*图片悬停放大*/
+        div#second-div:hover img {
+            -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+            -webkit-transition: -webkit-transform .3s ease-out;
+            transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+        }
+        div#fourth-div .xingyan:hover img {
+            -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+            -webkit-transition: -webkit-transform .3s ease-out;
+            transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+        }
+        div#fourth-div .mengping :hover img {
+            -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+            -webkit-transition: -webkit-transform .3s ease-out;
+            transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+        }
+        div#fourth-div .jiaqi :hover img {
+            -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+            -webkit-transition: -webkit-transform .3s ease-out;
+            transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+        }
+
+        #second-div a img {
+            width: 1240px;
+            height: 540px;
+        }
+
+        #second-div .desc {
+            position: absolute;
+            bottom: 3px;
+            box-sizing: border-box;
+            padding: 20px 130px 20px 20px;
+            z-index: 9;
+            width: 1240px;
+            color: rgb(255, 255, 255);
+            background-color: rgba(20, 20, 20, 0.5);
+            font-size: 36px;
+        }
+
+        #third-div {
+            width: 100%;
+            height: 50px;
+        }
+
+        #fourth-div .xingyan {
+            display: inline-block;
+            width: 30%;
+            height: 40%;
+            margin-left: 6%;
+        }
+
+        #fourth-div .xingyan .tag {
+            font-size: 16px;
+            color: #999;
+            line-height: 25px;
+            white-space: nowrap;
+
+        }
+
+        #fourth-div .xingyan .tag a {
+            background-color: red;
+            color: white;
+            font-family: 楷体;
+
+        }
+
+        #fourth-div .xingyan .title {
+            color: black;
+            width: 400px;
+
+        }
+
+        #fourth-div .mengping {
+            display: inline-block;
+            width: 33%;
+            height: 40%;
+        }
+
+        #fourth-div .mengping .tag {
+            font-size: 16px;
+            color: #999;
+            line-height: 25px;
+            white-space: nowrap;
+
+        }
+
+        #fourth-div .mengping .tag a {
+            background-color: red;
+            color: white;
+            font-family: 楷体;
+
+        }
+
+        #fourth-div .mengping .title {
+            color: black;
+        }
+
+        #fourth-div .jiaqi {
+            display: inline-block;
+            width: 33%;
+            height: 40%;
+        }
+
+        #fourth-div .jiaqi .tag {
+            font-size: 16px;
+            color: #999;
+            line-height: 25px;
+            white-space: nowrap;
+
+        }
+
+        #fourth-div .jiaqi .tag a {
+            background-color: red;
+            color: white;
+            font-family: 楷体;
+
+        }
+
+        #fourth-div .jiaqi .title {
+            color: black;
+        }
+
+        div#fourth-div {
+            position: relative;
+        }
+
+        #fourth-div div.mengping {
+            position: absolute;
+            top: 0px;
+
+        }
+
+        #fourth-div div.jiaqi {
+            position: absolute;
+            top: 0px;
+            right: 5px;
+        }
+
+        div.content-layout div.list-fl {
+            margin-left: 6%;
+        }
+
+        div.content-layout div.list-fl .mark {
+            padding-right: 15px;
+        }
+        div.content-layout div.list-fl .f1:hover{
+            -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+            -webkit-transition: -webkit-transform .3s ease-out;
+            transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+        }
+        div.content-layout div.list-fl .f2:hover{
+            -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+            -webkit-transition: -webkit-transform .3s ease-out;
+            transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+        }
+        div.content-layout div.list-fl .f3:hover{
+            -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+            -webkit-transition: -webkit-transform .3s ease-out;
+            transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+        }
+        div.content-layout div.list-fl .f4:hover{
+            -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+            -webkit-transition: -webkit-transform .3s ease-out;
+            transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+        }
+
+        /*kevin luo网页制作部分*/
+        /*左边栏目的内容修饰*/
+        #leftContentDiv {
+
+            display: inline-block;
+            margin-left: 6%;
+        }
+
+        span {
+            font-size: 35px;
+            color: rgb(44, 44, 207);
+            font-weight: bold;
+        }
+
+        /*图片悬停放大*/
+        #leftContentDiv .leftDiv1:hover img {
+            -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+            -webkit-transition: -webkit-transform .3s ease-out;
+            transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+        }
+
+        #leftContentDiv .leftDiv3 :hover img {
+            -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+            -webkit-transition: -webkit-transform .3s ease-out;
+            transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+        }
+
+        #leftContentDiv .leftDiv4 :hover img {
+            -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+            -webkit-transition: -webkit-transform .3s ease-out;
+            transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+        }
+
+        .leftDiv1 {
+            position: relative;
+            margin-top: 20px;
+        }
+
+        div.newsDiv1 .leftDiv1 .leftDiv2 {
+            position: absolute;
+            height: 74px;
+            bottom: 3px;
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+            background-color: rgba(20, 20, 20, 0.5);
+            width: 582px;
+            line-height: 74px;
+        }
+
+        div.newsDiv1 .leftDiv1 .leftDiv2 .leftH1 {
+            padding-left: 15px;
+        }
+
+        .leftDiv3 {
+            display: inline-block;
+            position: relative;
+            margin: 5px 5px 0px 0px;
+        }
+
+        .leftDiv3 .fontDiv1 {
+            position: absolute;
+            height: 40px;
+            bottom: 3px;
+            font-size: 15px;
+            color: rgb(255, 255, 255);
+            background-color: rgba(20, 20, 20, 0.5);
+
+        }
+
+        .leftDiv4 {
+            display: inline-block;
+            position: relative;
+        }
+
+        .leftDiv4 .fontDiv2 {
+            position: absolute;
+            height: 40px;
+            width: 286px;
+            bottom: 3px;
+            font-size: 15px;
+            color: rgb(255, 255, 255);
+            background-color: rgba(20, 20, 20, 0.5);
+            line-height: 40px;
+        }
+
+        .leftDiv4 .leftH3 {
+            padding-left: 15px;
+        }
+
+        #leftContentDiv a {
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        /*右边栏目的内容修饰*/
+        #rightContentDiv {
+            width: 582px;
+            height: 582px;
+            display: inline-block;
+            position: relative;
+            margin: 0;
+
+
+        }
+
+        /*图片悬停放大*/
+        #rightContentDiv:hover li.news2 {
+            -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+            -webkit-transition: -webkit-transform .3s ease-out;
+            transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+        }
+
+        #rightContentDiv a.right1 {
+            padding-right: px;
+            font-size: 20px;
+            font-weight: bold;
+            color: rgb(44, 44, 207);
+            position: absolute;
+            right: 10px;
+            text-decoration: none;
+        }
+
+        #rightContentDiv li {
+            list-style-type: none;
+            position: relative;
+        }
+
+        #rightContentDiv li .rightLiDiv p {
+            display: inline-block;
+            position: absolute;
+            top: 38px;
+            left: 230px;
+        }
+
+        #rightContentDiv span {
+            font-size: 18px;
+            border: red solid 3px;
+            border-radius: 60px 70px 80px 90px;
+            background-color: coral;
+            position: absolute;
+            left: 249px;
+            top: 0px;
+        }
+
+        #rightContentDiv li .rightLiDiv p a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="topNews">
+        <hr>
+        <div class="top-news-content">
+            <h1 class="top-news-title">
+                <a href="https://www.beijing2022.cn/wog.htm?cmsid=20220205002308"
+                    title="第二十四届冬季奥林匹克运动会隆重开幕  习近平出席开幕式并宣布本届冬奥会开幕" target="_blank">第二十四届冬季奥林匹克运动会隆重开幕
+                    习近平出席开幕式并宣布本届冬奥会开幕</a>
+            </h1>
+            <p class="top-news-list">
+                <a href="https://www.beijing2022.cn/wog.htm?cmsid=20220206002606"
+                    title="孙春兰代表党中央、国务院向北京冬奥会中国体育代表团获得首金致贺电" target="_blank">孙春兰代表党中央、国务院向北京冬奥会中国体育代表团获得首金致贺电</a>
+            </p>
+
+        </div>
+    </section>
+    <div id="second-div">
+        <a href="https://www.beijing2022.cn/wog.htm?cmsid=20220210005412" title="男子冰球小组赛在国家体育馆展开较量" target="_blank">
+            <img src="./sources\图1.png" alt="男子冰球小组赛在国家体育馆展开较量">
+            <div class="desc">男子冰球小组赛在国家体育馆展开较量</div>
+        </a>
+    </div>
+    <div id="third-div">
+
+    </div>
+    <div id="fourth-div">
+        <div class="xingyan">
+            <a href="https://www.beijing2022.cn/wog.htm?cmsid=20220210007174"
+                title="单板滑雪女子U型场地技巧： 美国运动员克洛伊·金夺冠 中国三将无缘领奖台" target="_blank" class="img-container">
+                <img src="./sources\图2.jpg" alt="单板滑雪女子U型场地技巧： 美国运动员克洛伊·金夺冠 中国三将无缘领奖台">
+            </a>
+            <p class="tag">
+
+                <a href="https://www.beijing2022.cn/cn/presscentre/headlines.htm" title="焦点新闻" "="" target=" _blank"
+                    class="other">焦点新闻</a>
+                <span class="timesource"></span>
+            </p>
+            <a href="https://www.beijing2022.cn/wog.htm?cmsid=20220210007174"
+                title="单板滑雪女子U型场地技巧： 美国运动员克洛伊·金夺冠 中国三将无缘领奖台" target="_blank">
+                <p class="title">单板滑雪女子U型场地技巧： 美国运动员克洛伊·金夺冠 中国三将无缘领奖台</p>
+            </a>
+        </div>
+        <div class="mengping">
+            <a href="https://www.beijing2022.cn/wog.htm?cmsid=20220210007007" title="金博洋：这场比赛留下了人生中最美好的记忆"
+                target="_blank" class="img-container">
+                <img src="./sources\图3.jpg" alt="金博洋：这场比赛留下了人生中最美好的记忆">
+            </a>
+            <p class="tag">
+
+                <a href="https://www.beijing2022.cn/cn/presscentre/headlines.htm?type=2" title="焦点新闻"
+                    class="other">焦点新闻</a>
+                <span class="timesource"></span>
+            </p>
+            <!-- 标题 -->
+            <a href="https://www.beijing2022.cn/wog.htm?cmsid=20220210007007" title="金博洋：这场比赛留下了人生中最美好的记忆"
+                target="_blank">
+                <p class="title">金博洋：这场比赛留下了人生中最美好的记忆</p>
+            </a>
+
+            <div class="mark"></div>
+
+        </div>
+        <div class="jiaqi">
+            <a href="https://www.beijing2022.cn/wog.htm?cmsid=20220210005348" title="马秀玥：曾无数次幻想站在冬奥会舞台上" target="_blank"
+                class="img-container">
+                <img src="./sources\图4.jpg" alt="马秀玥：曾无数次幻想站在冬奥会舞台上">
+            </a>
+            <p class="tag">
+
+                <a href="https://www.beijing2022.cn/cn/presscentre/headlines.htm?type=3" title="焦点新闻"
+                    class="other">焦点新闻</a>
+                <span class="timesource"></span>
+            </p>
+            <!-- 标题 -->
+            <a href="https://www.beijing2022.cn/wog.htm?cmsid=20220210005348" title="马秀玥：曾无数次幻想站在冬奥会舞台上"
+                target="_blank">
+                <p class="title">马秀玥：曾无数次幻想站在冬奥会舞台上</p>
+            </a>
+
+            <div class="mark"></div>
+        </div>
+    </div>
+    <div class="content-layout">
+        <!-- 右侧水平列表 -->
+        <div class="list-fl">
+
+            <a href="https://results.beijing2022.cn/beijing-2022/olympic-games/zh/results/all-sports/olympic-schedule.htm"
+                title="竞赛日程" target="_blank" class="item">
+                <img src="./sources\图5.png" alt="竞赛日程" class="f1">
+                <!-- hover态高光 -->
+                <span class="mark"> </span>
+            </a>
+
+            <a href="https://results.beijing2022.cn/beijing-2022/olympic-games/zh/results/all-sports/athletes.htm"
+                title="运动员" target="_blank" class="item">
+                <img src="./sources\图6.png" alt="运动员" class="f2">
+                <!-- hover态高光 -->
+                <span class="mark"> </span>
+            </a>
+
+            <a href="https://www.beijing2022.cn/cn/presscentre/officialrelease.htm" title="官方发布" target="_blank"
+                class="item">
+                <img src="./sources\图7.png" alt="官方发布" class="f3">
+                <!-- hover态高光 -->
+                <span class="mark"> </span>
+            </a>
+
+            <a href="https://www.beijing2022.cn/torch_relay.htm" title="火炬" target="_blank" class="item">
+                <img src="./sources\图8.png" alt="火炬" class="f4">
+                <!-- hover态高光 -->
+                <span class="mark"> </span>
+            </a>
+        </div>
+    </div>
+    <!--kevin luo网页制作部分-->
+    <div class="newsDiv1">
+        <div id="leftContentDiv">
+            <span>新闻速递</span>
+            <div class="leftDiv1">
+                <a href="https://www.beijing2022.cn/wog.htm?cmsid=EYS2022020800632400"><img
+                        src="./sources/Olympic Games source/news1.jpg"></a>
+
+                <div class="leftDiv2">
+                    <a class="leftH1"
+                        href="https://www.beijing2022.cn/wog.htm?cmsid=EYS2022020800632400">中国代表团在35个小项实现参赛“零的突破”</a>
+
+                </div>
+
+            </div>
+            <div class="leftDiv3">
+                <a href="https://www.beijing2022.cn/wog.htm?cmsid=EYS2022020900753000"><img
+                        src="./sources/Olympic Games source/news7.jpg">
+                </a>
+                <div class="fontDiv1">
+                    <a class="leftH2"
+                        href="https://www.beijing2022.cn/wog.htm?cmsid=EYS2022020900753000">西班牙单板滑雪运动员：自己设计雪板 梦想奥运金牌</a>
+                </div>
+
+            </div>
+            <div class="leftDiv4">
+                <a href="https://www.beijing2022.cn/wog.htm?cmsid=EYS2022020900754200"><img
+                        src="./sources/Olympic Games source/news8.jpg">
+                </a>
+                <div class="fontDiv2">
+                    <a class="leftH3" href="https://www.beijing2022.cn/wog.htm?cmsid=EYS2022020900754200">圆梦北京
+                        老将卡尔潸然落泪</a>
+                </div>
+
+            </div>
+
+        </div>
+        <div id="rightContentDiv">
+            <a class="right1" href="https://www.beijing2022.cn/cn/presscentre/headlines.htm">去看更多 &gt;></a>
+            <ul class="ulCls">
+                <li class="news2">
+                    <a href="https://www.beijing2022.cn/wog.htm?cmsid=EYS2022021000542400"> <img
+                            src="./sources/Olympic Games source/news2.jpg"></a>
+                    <div class="rightLiDiv">
+                        <span>焦点新闻</span>
+                        <p><a
+                                href="https://www.beijing2022.cn/wog.htm?cmsid=EYS2022021000542400">国际奥委会点赞“双奥场馆”：汇集奥运可持续的优点</a>
+                        </p>
+                    </div>
+                </li>
+                <li class="news6">
+                    <a href="https://www.beijing2022.cn/wog.htm?cmsid=EYS2022020900755400"> <img
+                            src="./sources/Olympic Games source/news6.jpg"></a>
+                    <div class="rightLiDiv">
+                        <span>焦点新闻</span>
+                        <p><a
+                                href="https://www.beijing2022.cn/wog.htm?cmsid=EYS2022020900755400">如何防止运动员失误跌落悬崖？国家高山滑雪中心安装有“红色长城”</a>
+                        </p>
+                    </div>
+
+                </li>
+                <li class="news5">
+                    <a href="https://www.beijing2022.cn/wog.htm?cmsid=20220210005418"> <img
+                            src="./sources/Olympic Games source/news5.jpg"></a>
+                    <div class="rightLiDiv">
+                        <span style="color: rgb(252, 253, 252);background-color: rgb(60, 131, 212);">官方发布</span>
+                        <p><a href="https://www.beijing2022.cn/wog.htm?cmsid=20220210005418">2月9日冬奥新冠防疫情况</a></p>
+                    </div>
+
+                </li>
+
+                <li class="news4">
+                    <a href="https://www.beijing2022.cn/wog.htm?cmsid=20220209008060"><img
+                            src="./sources/Olympic Games source/news4.jpg"></a>
+                    <div class="rightLiDiv">
+                        <span>焦点新闻</span>
+                        <p><a href="https://www.beijing2022.cn/wog.htm?cmsid=20220209008060">高山滑雪生命守护者：不动如山，迅疾似火</a></p>
+                    </div>
+
+                </li>
+
+
+                </li>
+
+            </ul>
+
+        </div>
+
+</body>
+<script type="text/javascript">
+
+</script>
+
+</html>
