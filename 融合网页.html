@@ -1,0 +1,1835 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>冬奥会</title>
+    <style type="text/css">
+        /*hou yuan网页制作部分*/
+        /*导航栏-标题 */
+        .lay li {
+            position: relative;
+            float: left;
+            margin-left: 70px;
+            text-align: center;
+            list-style: none;
+            right: 35px;
+
+        }
+
+        .lay .fl a {
+            list-style: none;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .fl {
+            text-align: center;
+
+        }
+
+        .lay .fl li a:hover {
+            color: red;
+            font-size: 25px;
+        }
+
+        body {
+            background-image: none;
+        }
+
+        .lay {
+            background-color: #0755a7;
+            height: 60px;
+            text-align: center;
+        }
+        .nav{
+            background-image: url('./sources/Olympic\ Games\ source/雪花背景1.jpg');
+        }
+
+        #backgroundDiv{
+            background-image: url('./sources/Olympic\ Games\ source/雪花背景12.jpg');
+            background-size: cover;
+        }
+        .newsDiv1{
+            background-image: url('./sources/Olympic\ Games\ source/雪花背景10.jpg');
+            background-size: cover;
+        }
+        #backgroudDiv2{
+            background-image: url('./sources/Olympic\ Games\ source/雪花背景4.jpg');
+            background-size: cover;
+        }
+
+        div#relatedWebDiv {
+            background: url('./sources/Olympic Games source/雪花背景2.jpg');
+            background-size: cover;
+        }
+
+        .nav {
+            height: 42px;
+
+        }
+
+        .nav .left {
+            position: absolute;
+            top: 20px;
+            left: 120px;
+        }
+
+        .nav .left a.language {
+            position: relative;
+            top: 24px;
+            margin-left: -10px;
+            right: 69px;
+        }
+
+        .nav .left span a {
+            margin-left: 30px;
+            font-weight: bolds;
+            font-size: 25px;
+            color: #ee3131;
+        }
+
+        .nav .left span {
+            position: relative;
+            right: 40px;
+        }
+
+        .tq span {
+            position: absolute;
+            top: 23px;
+            right: 400px;
+        }
+
+        div.tq {
+            position: relative;
+            height: 80px;
+        }
+
+        div.tq .seekCls {
+            position: absolute;
+            right: 720px;
+            top: 23px;
+            border: fuchsia 2px solid;
+            border-radius: 60px 60px 60px 60px;
+            background-color: khaki;
+            width: 235px;
+            height: 35px;
+        }
+
+        div.tq .seekCls .txt {
+            position: relative;
+            bottom: 3px;
+            left: 6px;
+            border-radius: 50px;
+            background-color: aquamarine;
+        }
+
+        div.tq .seekCls button {
+            position: relative;
+            left: 2px;
+            bottom: 3px;
+            background-color: coral;
+        }
+
+        div.tq img.binCls {
+            position: absolute;
+            right: 15px;
+        }
+
+        div.tq img.disablityCls {
+            position: absolute;
+            right: 180px;
+            top: 28px;
+        }
+
+        div.tq img.bin1 {
+            position: absolute;
+            height: 90px;
+            top: -10px;
+            left: 800px;
+        }
+
+        div.tq img.bin2 {
+            position: absolute;
+            height: 90px;
+            top: -10px;
+        }
+
+        div.tq img.bin3 {
+            position: absolute;
+            height: 90px;
+            top: -10px;
+            left: 350px;
+        }
+
+        div.tq img.weatherCls {
+            position: absolute;
+            right: 320px;
+            top: 12px;
+        }
+
+        .nav .right {
+            float: right;
+            width: auto;
+        }
+
+        .nav .right .txt {
+            border-radius: 30px;
+            border-color: grey;
+            margin-top: 0px;
+            height: 20px;
+        }
+
+        .tq span {
+            margin-left: 50px;
+            font-size: 23px;
+        }
+
+        .nav .right .tq img {
+            width: 80px;
+            height: 45px;
+            margin-left: 35px;
+        }
+
+        /*wang yu dong网页制作部分*/
+       
+        * a {
+            text-decoration: none;
+        }
+
+        * a:hover {
+            color: crimson;
+        }
+
+        * a:active {
+            color: rgb(66, 231, 176);
+        }
+
+        #topNews .top-news-content {
+            width: 1200px;
+            margin: 24px auto 14px;
+            text-align: center;
+        }
+
+        #topNews .top-news-content .top-news-title a {
+
+            color: #0755a7;
+        }
+
+        #topNews .top-news-content .top-news-title {
+            font-size: 33px;
+        }
+
+        a {
+            background-color: transparent;
+        }
+
+        #topNews .top-news-content .top-news-list a {
+            color: #222;
+            font-size: 20px;
+        }
+
+
+        #topNews .top-news-content .top-news-list {
+            font-size: 16px;
+            line-height: 34px;
+            color: #222;
+            margin: 0;
+        }
+
+        #topNews .top-news-content .top-news-list a:hover {
+            color: crimson;
+        }
+
+        #topNews .top-news-content .top-news-list a:active {
+            color: rgb(66, 231, 176);
+            ;
+        }
+
+        p {
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+        }
+
+        div#second-div {
+            margin-left: 6%;
+            position: relative;
+        }
+
+        /*图片悬停放大*/
+        div#second-div:hover img {
+            -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+            -webkit-transition: -webkit-transform .3s ease-out;
+            transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+        }
+
+        div#fourth-div .xingyan:hover img {
+            -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+            -webkit-transition: -webkit-transform .3s ease-out;
+            transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+        }
+
+        div#fourth-div .mengping :hover img {
+            -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+            -webkit-transition: -webkit-transform .3s ease-out;
+            transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+        }
+
+        div#fourth-div .jiaqi :hover img {
+            -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+            -webkit-transition: -webkit-transform .3s ease-out;
+            transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+        }
+
+        #second-div a img {
+            width: 1240px;
+            height: 540px;
+        }
+
+        #second-div .desc {
+            position: absolute;
+            bottom: 3px;
+            box-sizing: border-box;
+            padding: 20px 130px 20px 20px;
+            z-index: 9;
+            width: 1240px;
+            color: rgb(255, 255, 255);
+            background-color: rgba(20, 20, 20, 0.5);
+            font-size: 36px;
+        }
+
+        #third-div {
+            width: 100%;
+            height: 50px;
+        }
+
+        #fourth-div .xingyan {
+            display: inline-block;
+            width: 30%;
+            height: 40%;
+            margin-left: 6%;
+        }
+
+        #fourth-div .xingyan .tag {
+            font-size: 16px;
+            color: #999;
+            line-height: 25px;
+            white-space: nowrap;
+
+        }
+
+        #fourth-div .xingyan .tag a {
+            background-color: red;
+            color: white;
+            font-family: 楷体;
+
+        }
+
+        #fourth-div .xingyan .title {
+            color: black;
+            width: 400px;
+
+        }
+
+        #fourth-div .mengping {
+            display: inline-block;
+            width: 33%;
+            height: 40%;
+        }
+
+        #fourth-div .mengping .tag {
+            font-size: 16px;
+            color: #999;
+            line-height: 25px;
+            white-space: nowrap;
+
+        }
+
+        #fourth-div .mengping .tag a {
+            background-color: red;
+            color: white;
+            font-family: 楷体;
+
+        }
+
+        #fourth-div .mengping .title {
+            color: black;
+        }
+
+        #fourth-div .jiaqi {
+            display: inline-block;
+            width: 33%;
+            height: 40%;
+        }
+
+        #fourth-div .jiaqi .tag {
+            font-size: 16px;
+            color: #999;
+            line-height: 25px;
+            white-space: nowrap;
+
+        }
+
+        #fourth-div .jiaqi .tag a {
+            background-color: red;
+            color: white;
+            font-family: 楷体;
+
+        }
+
+        #fourth-div .jiaqi .title {
+            color: black;
+        }
+
+        div#fourth-div {
+            position: relative;
+        }
+
+        #fourth-div div.mengping {
+            position: absolute;
+            top: 0px;
+
+        }
+
+        #fourth-div div.jiaqi {
+            position: absolute;
+            top: 0px;
+            right: 5px;
+        }
+
+        #fourth-div .title:hover {
+            color: crimson;
+        }
+
+        #fourth-div .title:active {
+            color: rgb(66, 231, 176);
+        }
+
+        div.content-layout div.list-fl {
+            margin-left: 6%;
+        }
+
+        div.content-layout div.list-fl .mark {
+            padding-right: 15px;
+        }
+
+        div.content-layout div.list-fl .f1:hover {
+            -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+            -webkit-transition: -webkit-transform .3s ease-out;
+            transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+        }
+
+        div.content-layout div.list-fl .f2:hover {
+            -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+            -webkit-transition: -webkit-transform .3s ease-out;
+            transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+        }
+
+        div.content-layout div.list-fl .f3:hover {
+            -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+            -webkit-transition: -webkit-transform .3s ease-out;
+            transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+        }
+
+        div.content-layout div.list-fl .f4:hover {
+            -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+            -webkit-transition: -webkit-transform .3s ease-out;
+            transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+        }
+
+        /*kevin luo网页制作部分*/
+        /*左边栏目的内容修饰*/
+    
+        #leftContentDiv {
+
+            display: inline-block;
+            margin-left: 6%;
+        }
+
+        span {
+            font-size: 35px;
+            color: rgb(44, 44, 207);
+            font-weight: bold;
+        }
+
+        /*图片悬停放大*/
+        #leftContentDiv .leftDiv1:hover img {
+            -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+            -webkit-transition: -webkit-transform .3s ease-out;
+            transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+        }
+
+        #leftContentDiv .leftDiv3 :hover img {
+            -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+            -webkit-transition: -webkit-transform .3s ease-out;
+            transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+        }
+
+        #leftContentDiv .leftDiv4 :hover img {
+            -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+            -webkit-transition: -webkit-transform .3s ease-out;
+            transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+        }
+
+        .leftDiv1 {
+            position: relative;
+            margin-top: 20px;
+        }
+
+        div.newsDiv1 .leftDiv1 .leftDiv2 {
+            position: absolute;
+            height: 74px;
+            bottom: 3px;
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+            background-color: rgba(20, 20, 20, 0.5);
+            width: 582px;
+            line-height: 74px;
+        }
+
+        div.newsDiv1 .leftDiv1 .leftDiv2 .leftH1 {
+            padding-left: 15px;
+        }
+
+        .leftDiv3 {
+            display: inline-block;
+            position: relative;
+            margin: 5px 5px 0px 0px;
+        }
+
+        .leftDiv3 .fontDiv1 {
+            position: absolute;
+            height: 40px;
+            bottom: 3px;
+            font-size: 15px;
+            color: rgb(255, 255, 255);
+            background-color: rgba(20, 20, 20, 0.5);
+
+        }
+
+        .leftDiv4 {
+            display: inline-block;
+            position: relative;
+        }
+
+        .leftDiv4 .fontDiv2 {
+            position: absolute;
+            height: 40px;
+            width: 286px;
+            bottom: 3px;
+            font-size: 15px;
+            color: rgb(255, 255, 255);
+            background-color: rgba(20, 20, 20, 0.5);
+            line-height: 40px;
+        }
+
+        .leftDiv4 .leftH3 {
+            padding-left: 15px;
+        }
+
+        #leftContentDiv a {
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        /*右边栏目的内容修饰*/
+        #rightContentDiv {
+            width: 582px;
+            height: 582px;
+            display: inline-block;
+            position: relative;
+            margin: 0;
+
+
+        }
+
+        /*图片悬停放大*/
+        #rightContentDiv:hover li.news2 {
+            -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+            -webkit-transition: -webkit-transform .3s ease-out;
+            transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+        }
+
+        #rightContentDiv:hover li.news5 {
+            -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+            -webkit-transition: -webkit-transform .3s ease-out;
+            transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+        }
+
+        #rightContentDiv a.right1 {
+            font-size: 20px;
+            font-weight: bold;
+            color: rgb(44, 44, 207);
+            position: absolute;
+            right: 10px;
+top: 10px;
+            text-decoration: none;
+        }
+
+        #rightContentDiv li {
+            list-style-type: none;
+            position: relative;
+        }
+
+        #rightContentDiv li .rightLiDiv p {
+            display: inline-block;
+            position: absolute;
+            top: 38px;
+            left: 230px;
+        }
+
+        #rightContentDiv span {
+            font-size: 18px;
+            border: red solid 3px;
+            border-radius: 60px 70px 80px 90px;
+            background-color: coral;
+            position: absolute;
+            left: 249px;
+            top: 0px;
+        }
+
+        #rightContentDiv li .rightLiDiv p a {
+            text-decoration: none;
+        }
+
+        /*冬奥精彩视频-kevin luo、刘帅奇*/
+        
+        #videoTable {
+            padding: 6%;
+
+        }
+
+        div.spDiv {
+            width: 200px;
+            height: 43px;
+            background-color: crimson;
+            font-size: 40px;
+            line-height: 43px;
+            text-align: center;
+            font-family: 楷体;
+            border-radius: 10px 50px;
+            font-weight: bold;
+            color: rgb(229, 255, 0);
+            position: relative;
+            top: 60px;
+        }
+
+        span.spGetMore a {
+            position: absolute;
+            right: 10px;
+            border-radius: 15px 90% 90% 15px;
+            border: 2px orangered solid;
+            background-color: coral;
+        }
+
+        #videoTable .trCls1 {
+            position: relative;
+            bottom: 26px;
+        }
+
+        #videoTable .video {
+            position: relative;
+            height: 42px;
+            bottom: 3px;
+            font-size: 17px;
+            color: rgb(255, 255, 255);
+            background-color: rgba(20, 20, 20, 0.5);
+            bottom: 46.5px;
+            text-align: center;
+
+        }
+
+        #videoTable td {
+            padding: 20px;
+            padding-top: 0px;
+        }
+
+        td a {
+            text-decoration: none;
+        }
+
+        #videoTable td :hover img {
+            -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+            -webkit-transition: -webkit-transform .3s ease-out;
+            transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+        }
+
+        #videoTable td .errDiv img {
+            width: 396px;
+            height: 225px;
+        }
+
+        /*冬奥相关网站-wang yu dong*/
+       
+        #relatedWebDiv * a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .list-one .title {
+            color: #0755a7;
+            font-size: 20px;
+            font-weight: 700;
+            border-left: 4px solid #00a8e3;
+            height: 19px;
+            line-height: 20px;
+            padding-left: 5px;
+            margin-top: 15px;
+            margin-bottom: 24px;
+        }
+
+        #relatedWebDiv * li {
+            list-style-type: none;
+            display: inline-block;
+        }
+
+        #relatedWebDiv p {
+            color: black;
+            font-size: small;
+            position: relative;
+            right: -50px;
+        }
+
+        .list-two .title {
+            color: #0755a7;
+            font-size: 20px;
+            font-weight: 700;
+            border-left: 4px solid #00a8e3;
+            height: 19px;
+            line-height: 20px;
+            padding-left: 5px;
+            margin-top: 15px;
+            margin-bottom: 24px;
+        }
+
+        .list-three .title {
+            color: #0755a7;
+            font-size: 20px;
+            font-weight: 700;
+            border-left: 4px solid #00a8e3;
+            height: 19px;
+            line-height: 20px;
+            padding-left: 5px;
+            margin-top: 15px;
+            margin-bottom: 24px;
+        }
+
+        .list-four .title {
+            color: #0755a7;
+            font-size: 20px;
+            font-weight: 700;
+            border-left: 4px solid #00a8e3;
+            height: 19px;
+            line-height: 20px;
+            padding-left: 5px;
+            margin-top: 15px;
+            margin-bottom: 24px;
+        }
+
+        .list-five .title {
+            color: #0755a7;
+            font-size: 20px;
+            font-weight: 700;
+            border-left: 4px solid #00a8e3;
+            height: 19px;
+            line-height: 20px;
+            padding-left: 5px;
+            margin-top: 15px;
+            margin-bottom: 24px;
+        }
+
+        p.text {
+            color: gray;
+            font-size: large;
+        }
+
+        .list-six .title {
+            color: #0755a7;
+            font-size: 20px;
+            font-weight: 700;
+            border-left: 4px solid #00a8e3;
+            height: 19px;
+            line-height: 20px;
+            padding-left: 5px;
+            margin-top: 15px;
+            margin-bottom: 24px;
+        }
+
+        .list-seven .title {
+            color: #0755a7;
+            font-size: 20px;
+            font-weight: 700;
+            border-left: 4px solid #00a8e3;
+            height: 19px;
+            line-height: 20px;
+            padding-left: 5px;
+            margin-top: 15px;
+            margin-bottom: 24px;
+        }
+
+        .list-eight .title {
+            color: #0755a7;
+            font-size: 20px;
+            font-weight: 700;
+            border-left: 4px solid #00a8e3;
+            height: 19px;
+            line-height: 20px;
+            padding-left: 5px;
+            margin-top: 15px;
+            margin-bottom: 24px;
+        }
+
+        .list-nine .title {
+            color: #0755a7;
+            font-size: 20px;
+            font-weight: 700;
+            border-left: 4px solid #00a8e3;
+            height: 19px;
+            line-height: 20px;
+            padding-left: 5px;
+            margin-top: 15px;
+            margin-bottom: 24px;
+        }
+    </style>
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+    <!--hou yuan网页制作部分-->
+    <!--导航栏-标题栏-->
+
+    <div class="nav">
+        <div class="left">
+            <span><a href="https://www.beijing2022.cn/">CN</a></span>
+            <a href="https://www.beijing2022.cn/" class="language">中文</a>
+            <span><a href="https://www.beijing2022.cn/en/">EN</a></span>
+            <a href="https://www.beijing2022.cn/en/" class="language">英文</a>
+            <span><a href="https://www.beijing2022.cn/fr/">FR</a></span>
+            <a href="https://www.beijing2022.cn/fr/" class="language">法语</a>
+        </div>
+
+        <div class="tq">
+            <span class="seekCls">
+                <a href="https://www.beijing2022.cn/dc2016/search.htm?q=%E5%86%AC%E5%A5%A5&lang=default">
+                    <input type="text" class="txt" placeholder="搜索更多冬奥内容">
+                    <button>搜索 </button>
+                </a>
+            </span>
+            <span>延庆赛区 -5℃</span>
+            <img src="./sources/Olympic Games source/bin.jpg" class="binCls">
+            <img src="./sources/Olympic Games source/残奥会.jpg" class="disablityCls">
+            <img src="./sources/Olympic Games source/weather.png" class="weatherCls">
+            <img src="./sources/Olympic Games source/冰墩墩1.jpg" alt="越野滑雪" class="bin1">
+            <img src="./sources/Olympic Games source/冰墩墩2.jpg" alt="高山滑雪" class="bin2">
+            <img src="./sources/Olympic Games source/冰墩墩3.jpg" alt="高山滑雪" class="bin3">
+        </div>
+
+
+        <div class="img2">
+            <img src="./sources/Olympic Games source/beijing2022.cn.jpeg">
+        </div>
+        <div style="font-size: 20px" class="lay">
+            <ul style="list-style: none;display:inline-block; " class="fl">
+                <li>
+                    <a href="https://www.beijing2022.cn/">首页</a>
+                </li>
+                <li>
+                    <a href="https://www.beijing2022.cn/cn/olympics/speed_skating.htm">项目</a>
+                </li>
+                <li>
+                    <a
+                        href="https://results.beijing2022.cn/beijing-2022/olympic-games/zh/results/all-sports/olympic-schedule.htm">赛程</a>
+                </li>
+                <li>
+                    <a
+                        href="https://results.beijing2022.cn/beijing-2022/olympic-games/zh/results/all-sports/medal-standings.htm">奖牌榜</a>
+                </li>
+                <li>
+                    <a href="https://media.beijing2022.cn/web">媒体专区</a>
+                </li>
+                <li>
+                    <a href="https://vol.beijing2022.cn/">志愿者</a>
+                </li>
+                <li>
+                    <a href="https://www.beijing2022.cn/education/index.htm">教育</a>
+                </li>
+                <li>
+                    <a href="https://www.beijing2022.cn/cn/olympics/history.htm">冬奥历史</a>
+                </li>
+                <li>
+                    <a href="https://www.beijing2022.cn/cn/olympics/stars.htm">冬奥明星</a>
+                </li>
+                <li>
+                    <a href="https://www.beijing2022.cn/cn/paralympics.htm">冬残奥会</a>
+                </li>
+                <li>
+                    <a href="https://www.beijing2022.cn/cn/aboutus/organisation.htm">我们</a>
+                </li>
+            </ul>
+        </div>
+
+        <!--wang yu dong网页制作部分-->
+        <div id="backgroundDiv">
+            <section id="topNews">
+                <hr>
+                <div class="top-news-content">
+                    <h1 class="top-news-title">
+                        <a href="https://www.beijing2022.cn/wog.htm?cmsid=20220205002308"
+                            title="第二十四届冬季奥林匹克运动会隆重开幕  习近平出席开幕式并宣布本届冬奥会开幕" target="_blank">第二十四届冬季奥林匹克运动会隆重开幕
+                            习近平出席开幕式并宣布本届冬奥会开幕</a>
+                    </h1>
+                    <p class="top-news-list">
+                        <a href="https://www.beijing2022.cn/wog.htm?cmsid=20220206002606"
+                            title="孙春兰代表党中央、国务院向北京冬奥会中国体育代表团获得首金致贺电"
+                            target="_blank">孙春兰代表党中央、国务院向北京冬奥会中国体育代表团获得首金致贺电</a>
+                    </p>
+
+                </div>
+            </section>
+            <div id="second-div">
+                <a href="https://www.beijing2022.cn/wog.htm?cmsid=20220210005412" title="男子冰球小组赛在国家体育馆展开较量"
+                    target="_blank">
+                    <img src="./sources/Olympic Games source/图1.png" alt="男子冰球小组赛在国家体育馆展开较量">
+                    <div class="desc">男子冰球小组赛在国家体育馆展开较量</div>
+                </a>
+            </div>
+            <div id="third-div">
+
+            </div>
+            <div id="fourth-div">
+                <div class="xingyan">
+                    <a href="https://www.beijing2022.cn/wog.htm?cmsid=20220210007174"
+                        title="单板滑雪女子U型场地技巧： 美国运动员克洛伊·金夺冠 中国三将无缘领奖台" target="_blank" class="img-container">
+                        <img src="./sources/Olympic Games source/图2.jpg" alt="单板滑雪女子U型场地技巧： 美国运动员克洛伊·金夺冠 中国三将无缘领奖台">
+                    </a>
+                    <p class="tag">
+
+                        <a href="https://www.beijing2022.cn/cn/presscentre/headlines.htm" title="焦点新闻" "="" target="
+                            _blank" class="other">焦点新闻</a>
+                        <span class="timesource"></span>
+                    </p>
+                    <a href="https://www.beijing2022.cn/wog.htm?cmsid=20220210007174"
+                        title="单板滑雪女子U型场地技巧： 美国运动员克洛伊·金夺冠 中国三将无缘领奖台" target="_blank">
+                        <p class="title">单板滑雪女子U型场地技巧： 美国运动员克洛伊·金夺冠 中国三将无缘领奖台</p>
+                    </a>
+                </div>
+                <div class="mengping">
+                    <a href="https://www.beijing2022.cn/wog.htm?cmsid=20220210007007" title="金博洋：这场比赛留下了人生中最美好的记忆"
+                        target="_blank" class="img-container">
+                        <img src="./sources/Olympic Games source/图3.jpg" alt="金博洋：这场比赛留下了人生中最美好的记忆">
+                    </a>
+                    <p class="tag">
+
+                        <a href="https://www.beijing2022.cn/cn/presscentre/headlines.htm?type=2" title="焦点新闻"
+                            class="other">焦点新闻</a>
+                        <span class="timesource"></span>
+                    </p>
+                    <!-- 标题 -->
+                    <a href="https://www.beijing2022.cn/wog.htm?cmsid=20220210007007" title="金博洋：这场比赛留下了人生中最美好的记忆"
+                        target="_blank">
+                        <p class="title">金博洋：这场比赛留下了人生中最美好的记忆</p>
+                    </a>
+
+                    <div class="mark"></div>
+
+                </div>
+                <div class="jiaqi">
+                    <a href="https://www.beijing2022.cn/wog.htm?cmsid=20220210005348" title="马秀玥：曾无数次幻想站在冬奥会舞台上"
+                        target="_blank" class="img-container">
+                        <img src="./sources/Olympic Games source/图4.jpg" alt="马秀玥：曾无数次幻想站在冬奥会舞台上">
+                    </a>
+                    <p class="tag">
+
+                        <a href="https://www.beijing2022.cn/cn/presscentre/headlines.htm?type=3" title="焦点新闻"
+                            class="other">焦点新闻</a>
+                        <span class="timesource"></span>
+                    </p>
+                    <!-- 标题 -->
+                    <a href="https://www.beijing2022.cn/wog.htm?cmsid=20220210005348" title="马秀玥：曾无数次幻想站在冬奥会舞台上"
+                        target="_blank">
+                        <p class="title">马秀玥：曾无数次幻想站在冬奥会舞台上</p>
+                    </a>
+
+                    <div class="mark"></div>
+                </div>
+            </div>
+            <div class="content-layout">
+                <!-- 右侧水平列表 -->
+                <div class="list-fl">
+
+                    <a href="https://results.beijing2022.cn/beijing-2022/olympic-games/zh/results/all-sports/olympic-schedule.htm"
+                        title="竞赛日程" target="_blank" class="item">
+                        <img src="./sources/Olympic Games source/图5.png" alt="竞赛日程" class="f1">
+                        <!-- hover态高光 -->
+                        <span class="mark"> </span>
+                    </a>
+
+                    <a href="https://results.beijing2022.cn/beijing-2022/olympic-games/zh/results/all-sports/athletes.htm"
+                        title="运动员" target="_blank" class="item">
+                        <img src="./sources/Olympic Games source/图6.png" alt="运动员" class="f2">
+                        <!-- hover态高光 -->
+                        <span class="mark"> </span>
+                    </a>
+
+                    <a href="https://www.beijing2022.cn/cn/presscentre/officialrelease.htm" title="官方发布" target="_blank"
+                        class="item">
+                        <img src="./sources/Olympic Games source/图7.png" alt="官方发布" class="f3">
+                        <!-- hover态高光 -->
+                        <span class="mark"> </span>
+                    </a>
+
+                    <a href="https://www.beijing2022.cn/torch_relay.htm" title="火炬" target="_blank" class="item">
+                        <img src="./sources/Olympic Games source/图8.png" alt="火炬" class="f4">
+                        <!-- hover态高光 -->
+                        <span class="mark"> </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!--kevin luo网页制作部分-->
+        <!--左边栏目的内容修饰-->
+        <div class="newsDiv1">
+            <div id="leftContentDiv">
+                <span>新闻速递</span>
+                <hr>
+                <div class="leftDiv1">
+                    <a href="https://www.beijing2022.cn/wog.htm?cmsid=EYS2022020800632400"><img
+                            src="./sources/Olympic Games source/news1.jpg"></a>
+
+                    <div class="leftDiv2">
+                        <a class="leftH1"
+                            href="https://www.beijing2022.cn/wog.htm?cmsid=EYS2022020800632400">中国代表团在35个小项实现参赛“零的突破”</a>
+
+                    </div>
+
+                </div>
+                <div class="leftDiv3">
+                    <a href="https://www.beijing2022.cn/wog.htm?cmsid=EYS2022020900753000"><img
+                            src="./sources/Olympic Games source/news7.jpg">
+                    </a>
+                    <div class="fontDiv1">
+                        <a class="leftH2"
+                            href="https://www.beijing2022.cn/wog.htm?cmsid=EYS2022020900753000">西班牙单板滑雪运动员：自己设计雪板
+                            梦想奥运金牌</a>
+                    </div>
+
+                </div>
+                <div class="leftDiv4">
+                    <a href="https://www.beijing2022.cn/wog.htm?cmsid=EYS2022020900754200"><img
+                            src="./sources/Olympic Games source/news8.jpg">
+                    </a>
+                    <div class="fontDiv2">
+                        <a class="leftH3" href="https://www.beijing2022.cn/wog.htm?cmsid=EYS2022020900754200">圆梦北京
+                            老将卡尔潸然落泪</a>
+                    </div>
+
+                </div>
+
+            </div>
+            <!--右边栏目的内容修饰-->
+            <div id="rightContentDiv">
+                <hr style="margin-bottom: 28px ;">
+                <a class="right1" href="https://www.beijing2022.cn/cn/presscentre/headlines.htm">去看更多 &gt;></a>
+                <ul class="ulCls">
+                    <li class="news2">
+                        <a href="https://www.beijing2022.cn/wog.htm?cmsid=EYS2022021000542400"> <img
+                                src="./sources/Olympic Games source/news2.jpg"></a>
+                        <div class="rightLiDiv">
+                            <span>焦点新闻</span>
+                            <p><a
+                                    href="https://www.beijing2022.cn/wog.htm?cmsid=EYS2022021000542400">国际奥委会点赞“双奥场馆”：汇集奥运可持续的优点</a>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="news6">
+                        <a href="https://www.beijing2022.cn/wog.htm?cmsid=EYS2022020900755400"> <img
+                                src="./sources/Olympic Games source/news6.jpg"></a>
+                        <div class="rightLiDiv">
+                            <span>焦点新闻</span>
+                            <p><a
+                                    href="https://www.beijing2022.cn/wog.htm?cmsid=EYS2022020900755400">如何防止运动员失误跌落悬崖？国家高山滑雪中心安装有“红色长城”</a>
+                            </p>
+                        </div>
+
+                    </li>
+                    <li class="news5">
+                        <a href="https://www.beijing2022.cn/wog.htm?cmsid=20220210005418"> <img
+                                src="./sources/Olympic Games source/news5.jpg"></a>
+                        <div class="rightLiDiv">
+                            <span style="color: rgb(252, 253, 252);background-color: rgb(60, 131, 212);">官方发布</span>
+                            <p><a href="https://www.beijing2022.cn/wog.htm?cmsid=20220210005418">2月9日冬奥新冠防疫情况</a></p>
+                        </div>
+
+                    </li>
+
+                    <li class="news4">
+                        <a href="https://www.beijing2022.cn/wog.htm?cmsid=20220209008060"><img
+                                src="./sources/Olympic Games source/news4.jpg"></a>
+                        <div class="rightLiDiv">
+                            <span>焦点新闻</span>
+                            <p><a href="https://www.beijing2022.cn/wog.htm?cmsid=20220209008060">高山滑雪生命守护者：不动如山，迅疾似火</a>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+            <!--冬奥精彩视频-kevin luo-->
+            <div id="backgroudDiv2">
+                <div class="spDiv">
+                    精彩视频
+                </div>
+                <span class="spGetMore"><a href="https://www.beijing2022.cn/video2ch.htm">更多冬奥视频>></a></span>
+                <table id="videoTable">
+                    <tr>
+                        <td>
+                            <div class="errDiv">
+                                <a href="https://www.beijing2022.cn/wog.htm?cmsid=EYS2022013100306700">
+                                    <img src="./sources/Olympic Games source/视频5.jpg">
+                            </div>
+                            <div class="video">除夕当天，冰墩墩吃独食惹怒雪容融！</div>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://www.beijing2022.cn/wog.htm?cmsid=EYS2021122200456900">
+                                <div class="errDiv"><img src="./sources/Olympic Games source/视频6.jpg"></div>
+                                <div class="video">乐在冬奥 | 看单板滑雪运动员在雪场跳台飞越梦想，共同演绎《爱在这里》 </div>
+                            </a>
+    
+                        </td>
+                        <td>
+                            <a href="https://www.beijing2022.cn/wog.htm?cmsid=EYS2022020900860000">
+                                <div><img src="https://img1.gtimg.com/ninja/2/2022/02/ninja164441146935345.jpg"></div>
+                                <div class="video">双奥|之源 “眼镜飞人”胡凯， 昨日的速度与今日的温度 </div>
+                            </a>
+    
+                        </td>
+                    </tr>
+                    <tr class="trCls1">
+                        <td>
+                            <a href="https://www.beijing2022.cn/wog.htm?cmsid=EYS2022020100151300">
+                                <div class="errDiv"><img src="./sources/Olympic Games source/视频3.jpg"></div>
+                                <div class="video">墩墩容融带你看 | 走进“雪如意” 感受冰雪与中国元素结合的魅力</div>
+                            </a>
+    
+                        </td>
+                        <td>
+                            <a href="https://www.beijing2022.cn/wog.htm?cmsid=EYS2022021100770600">
+                                <div><img src="./sources/Olympic Games source/视频2.png"></div>
+                                <div class="video">线上观光之熊猫——我和“冰墩墩”有个约会</div>
+                            </a>
+    
+                        </td>
+                        <td>
+                            <a href="https://www.beijing2022.cn/wog.htm?cmsid=EYS2022021100676400">
+                                <div class="errDiv"><img src="./sources/Olympic Games source/视频4.jpg"></div>
+                                <div class="video">冰墩墩雪容融的专属歌曲《相约北京》MV来啦！ </div>
+                            </a>
+    
+                        </td>
+                    </tr>
+                </table>
+    
+            </div>
+            
+            <!--wang yu dong-冬奥相关网站-->
+            <div id="relatedWebDiv">
+                <ul class="list-one">
+
+                    <a href="javascript:;" title="奥运会相关网站" target="_self" class="title">
+                        奥运会相关网站
+                    </a>
+                    <div class="list-container">
+                        <li class="item">
+
+                            <a href="http://www.olympic.org/" title="国际奥委会" target="_blank">
+
+                                <img src="./sources/Olympic Games source/photo1.jpg" alt="国际奥委会">
+                                <p class="sub-text">国际奥委会</p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="https://tokyo2020.org/en/" title="2020东京奥运会" target="_blank">
+
+                                <img src="./sources/Olympic Games source/photo2.jpg" alt="2020东京奥运会">
+                                <p class="sub-text">2020东京奥运会</p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="https://www.paris2024.org/fr/" title="2024巴黎奥运会" target="_blank">
+
+                                <img src="./sources/Olympic Games source/photo3.jpg" alt="2024巴黎奥运会">
+                                <p class="sub-text">2024巴黎奥运会</p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="https://milanocortina2026.org/" title="2026米兰-科尔蒂纳丹佩佐冬奥会" target="_blank">
+
+                                <img src="./sources/Olympic Games source/photo4.png" alt="2026米兰-科尔蒂纳丹佩佐冬奥会">
+                                <p class="sub-text">2026米兰-科尔蒂纳丹佩佐冬奥会</p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="https://la28.org/" title="2028洛杉矶奥运会" target="_blank">
+
+                                <img src="./sources/Olympic Games source/photo5.jpg" alt="2028洛杉矶奥运会">
+                                <p class="sub-text">2028洛杉矶奥运会</p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="http://www.olympic.cn/" title="中国奥委会" target="_blank">
+
+                                <img src="./sources/Olympic Games source/photo6.jpg" alt="中国奥委会">
+                                <p class="sub-text">中国奥委会</p>
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+
+                <!--残奥会相关网站-->
+                <ul class="list-two">
+
+                    <a href="javascript:;" title="残奥会相关网站" target="_self" class="title">
+                        残奥会相关网站
+                    </a>
+                    <div class="list-container">
+                        <li class="item">
+
+                            <a href="https://www.paralympic.org/" title="国际残奥委会" target="_blank">
+
+                                <img src="./sources/Olympic Games source/photo7.jpg" alt="国际残奥委会">
+                                <p class="sub-text">国际残奥委会</p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="https://tokyo2020.org/en/paralympics/" title="2020东京残奥会" target="_blank">
+
+                                <img src="./sources/Olympic Games source/photo8.png" alt="2020东京残奥会">
+                                <p class="sub-text">2020东京残奥会</p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="https://www.paris2024.org/fr/celebration/" title="2024巴黎残奥会" target="_blank">
+
+                                <img src="./sources/Olympic Games source/photo9.jpg" alt="2024巴黎残奥会">
+                                <p class="sub-text">2024巴黎残奥会</p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="http://milanocortina2026.org/" title="2026米兰-科尔蒂纳丹佩佐冬残奥会" target="_blank">
+
+                                <img src="./sources/Olympic Games source/photo10.png" alt="2026米兰-科尔蒂纳丹佩佐冬残奥会">
+                                <p class="sub-text">2026米兰-科尔蒂纳丹佩佐冬残奥会</p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="https://la28.org/en/about-la28.html" title="2028洛杉矶残奥会" target="_blank">
+
+                                <img src="./sources/Olympic Games source/photo11.jpg" alt="2028洛杉矶残奥会">
+                                <p class="sub-text">2028洛杉矶残奥会</p>
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+
+                <!--奥林匹克全球合作伙伴-->
+                <ul class="list-three">
+
+                    <a href="javascript:;" title="奥林匹克全球合作伙伴" target="_self" class="title">
+                        奥林匹克全球合作伙伴
+                    </a>
+                    <div class="list-container">
+                        <li class="item">
+
+                            <a href="https://www.airbnb.com/" title="爱彼迎" target="_blank">
+
+                                <img src="./sources/Olympic Games source/photo12.jpg" alt="爱彼迎">
+                                <p class="sub-text">爱彼迎</p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="https://www.alibaba.com/" title="阿里巴巴" target="_blank">
+
+                                <img src="./sources/Olympic Games source/photo13.jpg" alt="阿里巴巴">
+                                <p class="sub-text">阿里巴巴</p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="https://www.allianz.com/en.html" title="安联" target="_blank">
+
+                                <img src="./sources/Olympic Games source/photo14.jpg" alt="安联">
+                                <p class="sub-text">安联</p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="http://www.atos.net/" title="源讯" target="_blank">
+
+                                <img src="./sources/Olympic Games source/photo15.jpg" alt="源讯">
+                                <p class="sub-text">源讯</p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="https://www.bridgestone.com/regional/asia_pacific/" title="普利司通" target="_blank">
+
+                                <img src="./sources/Olympic Games source/photo16.jpg" alt="普利司通">
+                                <p class="sub-text">普利司通</p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="http://www.coca-colacompany.com/" title="可口可乐" target="_blank">
+
+                                <img src="./sources/Olympic Games source/photo17.jpg" alt="可口可乐">
+                                <p class="sub-text">可口可乐</p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="https://www.intel.cn/content/www/cn/zh/homepage.html" title="英特尔" target="_blank">
+
+                                <img src="./sources/Olympic Games source/photo18.jpg" alt="英特尔">
+                                <p class="sub-text">英特尔</p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="https://www.omegawatches.com/" title="欧米茄" target="_blank">
+
+                                <img src="./sources/Olympic Games source/photo19.jpg" alt="欧米茄">
+                                <p class="sub-text">欧米茄</p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="http://www.panasonic.com/global/home.html" title="松下电器" target="_blank">
+
+                                <img src="./sources/Olympic Games source/photo20.jpg" alt="松下电器">
+                                <p class="sub-text">松下电器</p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="https://www.pg.com.cn/" title="宝洁" target="_blank">
+
+                                <img src="./sources/Olympic Games source/photo21.jpg" alt="宝洁">
+                                <p class="sub-text">宝洁</p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="https://www.samsung.com/cn/" title="三星" target="_blank">
+
+                                <img src="./sources/Olympic Games source/photo22.jpg" alt="三星">
+                                <p class="sub-text">三星</p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="http://www.toyota-global.com/" title="丰田汽车" target="_blank">
+
+                                <img src="./sources/Olympic Games source/photo23.jpg" alt="丰田汽车">
+                                <p class="sub-text">丰田汽车</p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="https://usa.visa.com/about-visa.html" title="维萨" target="_blank">
+
+                                <img src="./sources/Olympic Games source/photo24.jpg" alt="维萨">
+                                <p class="sub-text">维萨</p>
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+
+                <!--北京2022冬奥会官方合作伙伴-->
+
+                <ul class="list-four">
+                    <a href="javascript:;" title="北京2022年冬奥会官方合作伙伴" target="_self" class="title">
+                        北京2022年冬奥会官方合作伙伴
+                    </a>
+                    <div class="list-container">
+                        <li class="item">
+
+                            <a href="http://www.boc.cn/" title="中国银行" target="_blank">
+
+                                <img src="./sources/Olympic Games source/photo25.png" alt="中国银行">
+                                <p class="sub-text">中国银行</p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="http://www.airchina.com.cn/" title="中国国航" target="_blank">
+
+                                <img src="./sources/Olympic Games source/photo26.png" alt="中国国航">
+                                <p class="sub-text">中国国航</p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="https://www.yili.com/cms/index" title="伊利集团" target="_blank">
+
+                                <img src="./sources/Olympic Games source/photo27.png" alt="伊利集团">
+                                <p class="sub-text">伊利集团</p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="http://www.anta.cn/" title="安踏公司" target="_blank">
+
+                                <img src="./sources/Olympic Games source/photo28.png" alt="安踏公司">
+                                <p class="sub-text">安踏公司</p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="http://www.chinaunicom.com.cn/" title="中国联通" target="_blank">
+
+                                <img src="./sources/Olympic Games source/photo29.png" alt="中国联通">
+                                <p class="sub-text">中国联通</p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="https://www.beijing2022.cn/a/20180605/041225.htm" title="首钢集团" target="_blank">
+
+                                <img src="./sources/Olympic Games source/photo30.png" alt="首钢集团">
+                                <p class="sub-text">首钢集团</p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="http://www.cnpc.com.cn/cnpc/index.shtml" title="中国石油" target="_blank">
+
+                                <img src="./sources/Olympic Games source/photo31.png" alt="中国石油">
+                                <p class="sub-text">中国石油</p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="http://www.sinopec.com/" title="中国石化" target="_blank">
+
+                                <img src="./sources/Olympic Games source/photo32.png" alt="中国石化">
+                                <p class="sub-text">中国石化</p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="http://www.sgcc.com.cn/" title="国家电网" target="_blank">
+
+                                <img src="./sources/Olympic Games source/photo33.png" alt="国家电网">
+                                <p class="sub-text">国家电网</p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="https://www.picc.com/" title="中国人保" target="_blank">
+
+                                <img src="./sources/Olympic Games source/photo35.png" alt="中国人保">
+                                <p class="sub-text">中国人保</p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="https://www.ctg.com.cn" title="中国三峡" target="_blank">
+
+                                <img src="./sources/Olympic Games source/photo36.jpg" alt="中国三峡">
+                                <p class="sub-text">中国三峡</p>
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+
+                <!--北京2022年冬奥会官方赞助商-->
+
+                <ul class="list-five">
+
+                    <a href="javascript:;" title="北京2022年冬奥会官方赞助商" target="_self" class="title">
+                        北京2022年冬奥会官方赞助商
+                    </a>
+                    <div class="list-container">
+                        <li class="item">
+
+                            <a href="http://www.tsingtao.com.cn/" title="青岛啤酒" target="_blank">
+
+                                <img src="./sources/Olympic Games source/photo37.png" alt="青岛啤酒">
+                                <p class="sub-text">青岛啤酒</p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="http://www.yanjing.com.cn/" title="燕京啤酒" target="_blank">
+
+                                <img src="./sources/Olympic Games source/photo38.png" alt="燕京啤酒">
+                                <p class="sub-text">燕京啤酒</p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="https://www.jinlongyu.cn/" title="金龙鱼" target="_blank">
+
+                                <img src="./sources/Olympic Games source/photo39.png" alt="金龙鱼">
+                                <p class="sub-text">金龙鱼</p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="https://www.beijing2022.cn/a/20181226/006052.htm" title="顺鑫农业" target="_blank">
+
+                                <img src="./sources/Olympic Games source/photo40.png" alt="顺鑫农业">
+                                <p class="sub-text">顺鑫农业</p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="http://www.bjwt.com/" title="文投控股" target="_blank">
+
+                                <img src="./sources/Olympic Games source/photo41.png" alt="文投控股">
+                                <p class="sub-text">文投控股</p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="https://www.beijing2022.cn/a/20191022/007781.htm" title="北奥集团" target="_blank">
+
+                                <img src="./sources/Olympic Games source/photo42.png" alt="北奥集团">
+                                <p class="sub-text">北奥集团</p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="http://www.hyx1927.com/Default.htm" title="恒源祥" target="_blank">
+
+                                <img src="./sources/Olympic Games source/photo43.png" alt="恒源祥">
+                                <p class="sub-text">恒源祥</p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="https://www.qianxin.com/" title="奇安信" target="_blank">
+
+                                <img src="./sources/Olympic Games source/photo44.png" alt="奇安信">
+                                <p class="sub-text">奇安信</p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="https://www.yuanfudao.com/" title="猿辅导" target="_blank">
+
+                                <img src="./sources/Olympic Games source/photo45.png" alt="猿辅导">
+                                <p class="sub-text">猿辅导</p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="https://www.yumchina.com/" title="百胜中国" target="_blank">
+
+                                <img src="./sources/Olympic Games source/photo46.png" alt="百胜中国">
+                                <p class="sub-text">百胜中国</p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="https://www.panpanfood.com/" title="盼盼食品" target="_blank">
+
+                                <img src="./sources/Olympic Games source/photo47.png" alt="盼盼食品">
+                                <p class="sub-text">盼盼食品</p>
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+
+                <!--北京2022年冬奥会官方独家供应商-->
+
+                <ul class="list-six">
+
+                    <a href="javascript:;" title="北京2022年冬奥会官方独家供应商" target="_self" class="title">
+                        北京2022年冬奥会官方独家供应商
+                    </a>
+                    <div class="list-container">
+                        <li class="item">
+
+                            <a href="https://www.ef.com.cn/" title="英孚教育" target="_blank">
+
+                                <p class="text">英孚教育</p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="https://www.iflytek.com/" title="科大讯飞" target="_blank">
+
+                                <p class="text">科大讯飞</p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="http://www.chinapost.com.cn/" title="中国邮政" target="_blank">
+
+                                <p class="text">中国邮政</p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="https://www.hylink.com/" title="华扬联众" target="_blank">
+
+                                <p class="text">华扬联众</p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="https://www.marschina.com/" title="士力架" target="_blank">
+
+                                <p class="text">士力架</p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="http://www.pekhongyuan.com/" title="空港宏远" target="_blank">
+
+                                <p class="text">空港宏远</p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="https://www.3treesgroup.com/" title="三棵树" target="_blank">
+
+                                <p class="text">三棵树</p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="https://www.dongdao.net/" title="东道" target="_blank">
+
+                                <p class="text">东道</p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="http://www.landsky.cn/" title="良业" target="_blank">
+
+                                <p class="text">良业</p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="https://www.zhipin.com/" title="BOSS直聘" target="_blank">
+
+                                <p class="text">BOSS直聘</p>
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+
+                <!--北京2022年冬奥会官方供应商-->
+
+                <ul class="list-seven">
+
+                    <a href="javascript:;" title="北京2022年冬奥会官方供应商" target="_self" class="title">
+                        北京2022年冬奥会官方供应商
+                    </a>
+                    <div class="list-container">
+                        <li class="item">
+
+                            <a href="https://www.pwccn.com/zh.html" title="普华永道" target="_blank">
+
+                                <p class="text">普华永道</p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="http://www.suirui.com/" title="随锐集团" target="_blank">
+
+                                <p class="text">随锐集团</p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="http://www.wps.cn/" title="金山办公" target="_blank">
+
+                                <p class="text">金山办公</p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="http://www.1rock.net/" title="一石科技" target="_blank">
+
+                                <p class="text">一石科技</p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="https://www.beijing2022.cn/a/20200630/004461.htm?sports=1" title="歌华有线"
+                                target="_blank">
+
+                                <p class="text">歌华有线</p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="https://www.beijing2022.cn/a/20200630/004461.htm" title="河北广电" target="_blank">
+
+                                <p class="text">河北广电</p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="http://www.bbcabiotech.com" title="丰原生物" target="_blank">
+
+                                <p class="text">丰原生物</p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="http://www.keeson.com" title="麒盛科技" target="_blank">
+
+                                <p class="text">麒盛科技</p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="https://www.beijing2022.cn/wog.htm?cmsid=20210425003002" title="天坛家具"
+                                target="_blank">
+
+                                <p class="text">天坛家具</p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="https://www.beijing2022.cn/wog.htm?cmsid=EYS2021051800503700" title="石家庄印钞"
+                                target="_blank">
+
+                                <p class="text">石家庄印钞</p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="https://www.shuhua.cn/" title="舒华体育" target="_blank">
+
+                                <p class="text">舒华体育</p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="http://www.nabel.cc" title="诺贝尔瓷砖" target="_blank">
+
+                                <p class="text">诺贝尔瓷砖</p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="http://www.dongpeng.net" title="东鹏瓷砖" target="_blank">
+
+                                <p class="text">东鹏瓷砖</p>
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+
+                <!--北京2022年冬奥会特许经营计划-->
+
+                <ul class="list-eight">
+
+                    <a href="javascript:;" title="北京2022年冬奥会特许经营计划" target="_self" class="title">
+                        北京2022年冬奥会特许经营计划
+                    </a>
+                    <div class="list-container">
+                        <li class="item">
+
+                            <a href="http://beijing2022.tmall.com" title="  " target="_blank">
+
+                                <img src="./sources/Olympic Games source/photo48.png" alt="  ">
+                                <p class="sub-text"> </p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="http://licm.beijing2022.cn/trace/TraceQuery.jsp" title="  " target="_blank">
+
+                                <img src="./sources/Olympic Games source/photo49.png" alt="  ">
+                                <p class="sub-text"> </p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="http://www.beijing2022.cn/licm/licensinginfo.htm" title="  " target="_blank">
+
+                                <img src="./sources/Olympic Games source/photo50.png" alt="  ">
+                                <p class="sub-text"> </p>
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+
+                <!--友情链接-->
+
+                <ul class="list-nine">
+
+                    <a href="javascript:;" title="友情链接" target="_self" class="title">
+                        友情链接
+                    </a>
+                    <div class="list-container">
+                        <li class="item">
+
+                            <a href="https://2022.cctv.com/cmg/" title="中央广播电视总台" target="_blank">
+
+                                <p class="text">中央广播电视总台</p>
+                            </a>
+                        </li>
+                        <li class="item">
+
+                            <a href="https://www.hangzhou2022.cn/" title="2022年第19届亚运会组委会" target="_blank">
+
+                                <p class="text">2022年第19届亚运会组委会</p>
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+
+            </div>
+
+</body>
+
+</html>
